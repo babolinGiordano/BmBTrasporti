@@ -161,6 +161,7 @@ nav {
   padding: 1rem 2.5rem;
   text-transform: uppercase;
   transition: background-color 650ms;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -459,7 +460,7 @@ footer {
 }
 
 .top-link svg {
-  fill: #eb648c;
+  fill: rgba(0,0,0,.7);
   width: 24px;
   height: 12px;
 }
@@ -469,7 +470,7 @@ footer {
 }
 
 .top-link:hover svg {
-  fill: #000000;
+  fill: #eb648c;
 }
 
 .screen-reader-text {
@@ -502,3 +503,46 @@ footer {
   clip: auto !important;
 }
 
+/* Contact form */
+.form-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.form-control {
+  background-color: transparent;
+  color: #999!important;
+  border: 1px solid #a1a5a5;
+  font-size: 14px;
+  font-family: poppins,sans-serif;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  height: 45px;
+  border-radius: 3px;
+  padding: .375rem 2rem;
+  width: 100%;
+}
+
+.text-area {
+  height: 10rem;
+}
+
+.col-md-6 {
+  flex: 0 0 100%;
+  max-width: 80%;
+  position: relative;
+  width: 100%;
+}
+
+.quote {
+  transform: translateX(75%);
+}
+
+.sfondo {
+  background: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(72,56,149,0.8) 100%), url("images/logistic.jpg") center no-repeat;
+  border-radius: 10%;
+}

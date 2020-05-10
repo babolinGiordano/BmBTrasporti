@@ -47,3 +47,16 @@ scrollToTopButton.onclick = function (e) {
   e.preventDefault();
   scrollToTop();
 }
+
+
+const sendEmail = () => {
+  Email.send({
+    SecureToken: "ddc63169-2281-4876-9d43-f9416c919974",
+    To: 'giordano.babolin@protonmail.com',
+    From: "chiarar81@gmail.com",
+    Subject: "This is the subject",
+    Body: "And this is the body"
+  }).then(
+    message => alert(message)
+  );
+}

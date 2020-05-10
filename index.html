@@ -78,9 +78,9 @@
     <section class="experience-outdoors" id="service">
       <div class="container">
         <div class="title-heading">
-          <h3>Experince</h3>
-          <h1>The thrilling outdoors</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <h3>I nostri</h3>
+          <h1>Servizi</h1>
+          <p>cosa possiamo fare per voi</p>
         </div>
 
         <div class="activities-grid">
@@ -132,25 +132,36 @@
     <section class="begin-adventure" id="contact">
       <div class="container">
         <div class="title-heading">
-          <h3>Let the</h3>
-          <h1>Adventure begin</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <h1>Contattaci</h1>
+          <p>Per richiedere un preventivo di spesa per un viaggio, compilare il form</p>
         </div>
         <div class="adventure-grid">
           <!-- Adventure grid item #1 -->
           <div class="adventure-grid-item">
-            <p>Ritiro su richiesta, ritiriamo presso il vostro magazzino o presso i vostri fornitori le vostre merci
-              o le vostre forniture che successivamente verranno portate nel nostro magazzino per essere smistate nelle
-              varie zone di consegna.</p>
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="name" control"" placeholder="Name"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="email" placeholder="Email or phone"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email or phone'">
+                </div>
+                <div class="form-group col-md-6">
+                  <textarea name="text" id="message" class="form-control text-area" placeholder="Write a message"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'">
+                  </textarea>
+                </div>
+              </div>
+            </form>
+            <a class="btn quote" onclick="sendEmail()">Get your quote</a>
           </div>
           <!-- Adventure grid item #2 -->
-          <div class="adventure-grid-item">
-            <p>Ritiro su richiesta, ritiriamo presso il vostro magazzino o presso i vostri fornitori le vostre merci
-              o le vostre forniture che successivamente verranno portate nel nostro magazzino per essere smistate nelle
-              varie zone di consegna.</p>
+          <div class="adventure-grid-item sfondo">
+
           </div>
         </div>
-        <a class="btn">Book your adventure</a>
       </div>
     </section>
   </main>
@@ -166,6 +177,7 @@
   </a>
 
   <script type="text/javascript" src="scripts.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
